@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Luzombra Studio — reach out for collaborations, press, or general inquiries." />
+  <title>Contact | Luzombra Studio</title>
+
+  <!-- SEO / OG -->
+  <meta property="og:title" content="Contact Luzombra Studio" />
+  <meta property="og:description" content="Reach out to Luzombra Studio for inquiries, partnerships, and support." />
+  <meta property="og:image" content="assets/images/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="Luzombra Studio Logo" />
+      <h1>Luzombra Studio</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero contact-hero">
+    <video autoplay muted loop playsinline class="hero-video" data-poster="assets/videos/contact-bg.jpg">
+      <source src="assets/videos/contact-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you — whether it’s feedback, press inquiries, or partnership opportunities.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="section contact-info">
+    <div class="container">
+      <h2 class="fade-in">Reach Out</h2>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>📩 General Inquiries</h3>
+          <p>For general questions, collaborations, and partnerships.</p>
+          <a href="mailto:hello@luzombrastudio.com" class="btn btn-secondary">hello@luzombrastudio.com</a>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3>📰 Press & Media</h3>
+          <p>Request interviews, assets, or our press kit.</p>
+          <a href="mailto:press@luzombrastudio.com" class="btn btn-secondary">press@luzombrastudio.com</a>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3>🎮 Support</h3>
+          <p>Need help with our games? We’re here to assist you.</p>
+          <a href="mailto:support@luzombrastudio.com" class="btn btn-secondary">support@luzombrastudio.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section contact-form dark-bg">
+    <div class="container">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" method="POST" data-netlify="true" name="Luzombra Contact Form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Reason for contact" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <!-- CAPTCHA placeholder -->
+        <div class="form-group captcha-placeholder">
+          <p>[ CAPTCHA Placeholder – integrate reCAPTCHA here later ]</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Location & Socials -->
+  <section class="section location">
+    <div class="container">
+      <h2 class="fade-in">Visit or Follow Us</h2>
+      <div class="location-grid">
+        <div class="location-info reveal">
+          <h3>Studio Location</h3>
+          <p>Madrid, Spain</p>
+          <p><strong>Hours:</strong> Monday – Friday, 10:00 – 18:00 CET</p>
+        </div>
+        <div class="social-links reveal">
+          <h3>Connect Online</h3>
+          <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+          <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+          <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+          <a href="https://discord.gg" aria-label="Discord">Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Luzombra Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/lazyload.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

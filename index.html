@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Luzombra Studio — crafting atmospheric, story-driven games where light meets shadow." />
+  <title>Luzombra Studio | Official Website</title>
+
+  <!-- SEO & Meta -->
+  <meta property="og:title" content="Luzombra Studio" />
+  <meta property="og:description" content="Atmospheric, story-driven indie games that explore light and shadow." />
+  <meta property="og:image" content="assets/images/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="Luzombra Studio Logo" />
+      <h1>Luzombra Studio</h1>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>We bring light to darkness</h2>
+      <p>Atmospheric, story-driven worlds that linger long after the credits roll.</p>
+      <a href="games.html" class="btn btn-primary">Explore Our Games</a>
+    </div>
+  </section>
+
+  <!-- Featured Game Section -->
+  <section class="featured-game section">
+    <div class="container">
+      <h2>Featured Title</h2>
+      <div class="game-preview">
+        <img src="assets/images/game-art/featured.jpg" alt="Featured Game Art" />
+        <div class="game-info">
+          <h3>Echoes of the Eclipse</h3>
+          <p>An emotional journey through fractured light and shadow. Every choice you make echoes across worlds.</p>
+          <div class="store-links">
+            <a href="#" class="store-btn steam">Steam</a>
+            <a href="#" class="store-btn epic">Epic Games</a>
+            <a href="#" class="store-btn playstation">PlayStation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News / Devlog -->
+  <section class="latest-news section dark-bg">
+    <div class="container">
+      <h2>From the Devlog</h2>
+      <div class="news-grid">
+        <article>
+          <h3>Behind the Shadows: Building the World of Luzombra</h3>
+          <p>Dive into our design process and how we balance light, darkness, and emotion in every scene.</p>
+          <a href="news.html" class="read-more">Read More →</a>
+        </article>
+        <article>
+          <h3>Patch 0.9 Update — Refined Reflections</h3>
+          <p>Performance upgrades, dynamic lighting enhancements, and new narrative scenes are live!</p>
+          <a href="news.html" class="read-more">View Patch Notes →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta section">
+    <div class="container">
+      <h2>Join Our Community</h2>
+      <p>Follow our journey, get exclusive updates, and be part of Luzombra’s story.</p>
+      <form id="newsletter-form">
+        <input type="email" name="email" placeholder="Your email address" required />
+        <button type="submit" class="btn btn-secondary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+        <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+        <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+        <a href="https://discord.gg" aria-label="Discord">Discord</a>
+      </div>
+      <p>© 2025 Luzombra Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/lazyload.js"></script>
+  <script src="js/newsletter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

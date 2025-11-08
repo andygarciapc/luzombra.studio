@@ -1,0 +1,111 @@
+/* =======================================
+   Luzombra Studio - Main JavaScript
+   Purpose: Core interactivity & motion
+   Author: Luzombra Studio Dev Team
+   ======================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("✨ Luzombra Studio site initialized.");
+
+  /* ---------- Sticky Header Transparency ---------- */
+  const header = document.querySelector(".site-header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 60) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
+  /* ---------- Smooth Scroll for Anchor Links ---------- */
+  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+  for (let link of smoothLinks) {
+    link.addEventListener("click", (e) => {
+      const targetId = link.getAttribute("href");
+      if (targetId.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+    });
+  }
+
+  /* ---------- Scroll Reveal Animation ---------- */
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  for (let el of reveals) {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.85) {
+      el.classList.add("active");
+    }
+    // Do NOT remove the class when scrolling back up
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
+
+  /* ---------- Parallax Motion (Hero & Elements) ---------- */
+  const parallaxElements = document.querySelectorAll(".parallax");
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    parallaxElements.forEach((el) => {
+      const speed = el.dataset.speed ? parseFloat(el.dataset.speed) : 0.3;
+      el.style.transform = `translateY(${scrollTop * speed}px)`;
+    });
+  });
+
+  /* ---------- Lazy Load Placeholder (handled by lazyload.js) ---------- */
+  // This just ensures that elements tagged for lazyload fade in smoothly
+  const lazyItems = document.querySelectorAll("[data-lazy]");
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const src = el.dataset.src;
+          if (src) el.src = src;
+          el.classList.add("fade-in");
+          observer.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+  lazyItems.forEach((el) => observer.observe(el));
+
+  /* ---------- Newsletter Form Handling ---------- */
+  const form = document.getElementById("newsletter-form");
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = form.querySelector("input[name='email']").value.trim();
+
+      if (!email || !validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      // Placeholder for integration with Mailchimp / ConvertKit
+      console.log(`📧 Newsletter signup: ${email}`);
+      form.reset();
+      form.classList.add("submitted");
+      alert("Thank you for subscribing to Luzombra Studio updates!");
+    });
+  }
+
+  function validateEmail(email) {
+    const regex = /^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$/;
+    return regex.test(email);
+  }
+
+  /* ---------- Soft Page Fade-In ---------- */
+  document.body.style.opacity = "1";
+});

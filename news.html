@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stay updated with Luzombra Studio — news, devlogs, patch notes, and stories from behind the shadows." />
+  <title>News & Devlog | Luzombra Studio</title>
+
+  <!-- SEO / OG -->
+  <meta property="og:title" content="Luzombra Studio – News & Devlog" />
+  <meta property="og:description" content="Developer updates, patch notes, and behind-the-scenes stories from Luzombra Studio." />
+  <meta property="og:image" content="assets/images/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="Luzombra Studio Logo" />
+      <h1>Luzombra Studio</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero news-hero">
+    <video autoplay muted loop playsinline class="hero-video" data-poster="assets/videos/news-bg.jpg">
+      <source src="assets/videos/news-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>From the Devlog</h2>
+      <p>Stories from the shadowed halls — insights, updates, and moments of light from our journey.</p>
+    </div>
+  </section>
+
+  <!-- News Feed -->
+  <section class="section news-feed">
+    <div class="container">
+      <h2 class="fade-in">Latest Updates</h2>
+      <div class="news-grid">
+        
+        <!-- Article 1 -->
+        <article class="news-item reveal">
+          <img data-src="assets/images/news/devlog-01.jpg" alt="Behind the Shadows" class="fade-in" />
+          <div class="news-content">
+            <h3>Behind the Shadows: Building the World of Luzombra</h3>
+            <p>
+              Dive into the design philosophy behind our latest environments — 
+              where chiaroscuro art and emotional storytelling intertwine.
+            </p>
+            <a href="blog/behind-shadows.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="news-item reveal">
+          <img data-src="assets/images/news/patch-09.jpg" alt="Patch 0.9 Update" class="fade-in" />
+          <div class="news-content">
+            <h3>Patch 0.9: Refined Reflections</h3>
+            <p>
+              Dynamic lighting, new narrative sequences, and performance upgrades — 
+              everything you need to know about our latest build.
+            </p>
+            <a href="blog/patch-09.html" class="read-more">View Patch Notes →</a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="news-item reveal">
+          <img data-src="assets/images/news/devteam-spotlight.jpg" alt="Team Spotlight" class="fade-in" />
+          <div class="news-content">
+            <h3>Team Spotlight: Painting with Sound</h3>
+            <p>
+              Meet Mira, our audio designer, and discover how soundscapes shape the emotional rhythm of our games.
+            </p>
+            <a href="blog/team-spotlight.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="news-item reveal">
+          <img data-src="assets/images/news/prototype-lumina.jpg" alt="Prototype Lumina Veil" class="fade-in" />
+          <div class="news-content">
+            <h3>Prototyping Lumina Veil</h3>
+            <p>
+              Early design insights from our upcoming project — exploring ambient storytelling and shadow mechanics.
+            </p>
+            <a href="blog/lumina-prototype.html" class="read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="cta section dark-bg">
+    <div class="container">
+      <h2>Join Our Community</h2>
+      <p>Receive exclusive devlog updates, early access news, and behind-the-scenes insights.</p>
+      <form id="newsletter-form">
+        <input type="email" name="email" placeholder="Your email address" required />
+        <button type="submit" class="btn btn-secondary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+        <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+        <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+        <a href="https://discord.gg" aria-label="Discord">Discord</a>
+      </div>
+      <p>© 2025 Luzombra Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/lazyload.js"></script>
+  <script src="js/newsletter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

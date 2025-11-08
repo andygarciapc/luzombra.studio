@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join Luzombra Studio — where light and shadow converge to create story-driven games with heart and atmosphere." />
+  <title>Careers | Luzombra Studio</title>
+
+  <!-- SEO / OG -->
+  <meta property="og:title" content="Careers at Luzombra Studio" />
+  <meta property="og:description" content="Explore open roles and join our mission to craft immersive, story-driven worlds." />
+  <meta property="og:image" content="assets/images/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="Luzombra Studio Logo" />
+      <h1>Luzombra Studio</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero careers-hero">
+    <video autoplay muted loop playsinline class="hero-video" data-poster="assets/videos/careers-bg.jpg">
+      <source src="assets/videos/careers-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Join the Team</h2>
+      <p>Help us craft the worlds where light meets shadow.</p>
+    </div>
+  </section>
+
+  <!-- Careers Intro -->
+  <section class="section intro">
+    <div class="container fade-in">
+      <h2>Work with Purpose</h2>
+      <p>
+        Luzombra Studio is a collective of storytellers, artists, and engineers who believe in the transformative power of games.
+        We value creativity, empathy, and technical excellence. If you’re passionate about crafting experiences that resonate,
+        we’d love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Job Listings -->
+  <section class="section job-listings dark-bg">
+    <div class="container">
+      <h2 class="fade-in">Open Positions</h2>
+
+      <div class="job reveal">
+        <h3>🌑 Senior Environment Artist</h3>
+        <p><strong>Location:</strong> Remote (Global)</p>
+        <p>
+          Create breathtaking worlds that balance light and darkness. Work closely with the art and narrative teams
+          to shape visual storytelling through atmosphere, lighting, and composition.
+        </p>
+        <ul>
+          <li>Experience with Unreal Engine or Unity</li>
+          <li>Strong understanding of environmental storytelling</li>
+          <li>Portfolio demonstrating lighting and composition skills</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <h3>💡 Gameplay Programmer</h3>
+        <p><strong>Location:</strong> Remote / Hybrid (Spain Preferred)</p>
+        <p>
+          Implement engaging gameplay systems that bring our stories to life. Collaborate with designers to
+          prototype, iterate, and polish features in a narrative-driven environment.
+        </p>
+        <ul>
+          <li>Proficiency in C# or C++</li>
+          <li>Experience in Unity or Unreal Engine</li>
+          <li>Love for narrative and player immersion</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <h3>🎧 Sound Designer</h3>
+        <p><strong>Location:</strong> Remote / Freelance</p>
+        <p>
+          Shape the emotional landscape of our worlds through ambient design and reactive soundscapes. Your work will
+          bridge silence and resonance, fear and awe.
+        </p>
+        <ul>
+          <li>Proficiency with FMOD, Wwise, or similar tools</li>
+          <li>Experience designing ambient or cinematic sound</li>
+          <li>Strong communication and collaboration skills</li>
+        </ul>
+      </div>
+
+      <p class="fade-in-delay" style="margin-top: 2rem;">
+        Don’t see your dream role? We always welcome passionate creators. Send us an open application below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section application-form">
+    <div class="container">
+      <h2>Apply Now</h2>
+      <form id="application-form" method="POST" data-netlify="true" name="Luzombra Careers Form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="position">Position Applied For</label>
+          <select id="position" name="position" required>
+            <option value="">Select a role</option>
+            <option value="Environment Artist">Senior Environment Artist</option>
+            <option value="Gameplay Programmer">Gameplay Programmer</option>
+            <option value="Sound Designer">Sound Designer</option>
+            <option value="Open Application">Open Application</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="portfolio">Portfolio / Website</label>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about yourself and why you'd like to join Luzombra." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="resume">Resume (PDF)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" />
+        </div>
+
+        <!-- Placeholder CAPTCHA -->
+        <div class="form-group captcha-placeholder">
+          <p>[ CAPTCHA Placeholder – integrate reCAPTCHA here later ]</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+        <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+        <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+        <a href="https://discord.gg" aria-label="Discord">Discord</a>
+      </div>
+      <p>© 2025 Luzombra Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/lazyload.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

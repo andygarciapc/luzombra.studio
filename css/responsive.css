@@ -1,0 +1,230 @@
+/* =======================================
+   Luzombra Studio - Responsive Styles
+   Theme: Cinematic Fluidity
+   ======================================= */
+
+/* ---------- Base adjustments ---------- */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* ---------- Large Desktops (≥1600px) ---------- */
+@media (min-width: 1600px) {
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+
+  .featured-game img {
+    max-width: 650px;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* ---------- Standard Desktops (≥1200px) ---------- */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .hero-content h2 {
+    font-size: 2.8rem;
+  }
+
+  .featured-game .game-info h3 {
+    font-size: 2rem;
+  }
+}
+
+/* ---------- Tablets (≥768px to 1199px) ---------- */
+@media (max-width: 1199px) {
+  .main-nav ul {
+    gap: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .featured-game .game-preview {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-game img {
+    max-width: 90%;
+  }
+
+  .featured-game .game-info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .latest-news .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- Small Tablets & Large Phones (≥576px to 767px) ---------- */
+@media (max-width: 767px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .featured-game .game-preview {
+    text-align: center;
+  }
+
+  .latest-news .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta input[type="email"] {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .cta button {
+    width: 60%;
+  }
+}
+
+/* ---------- Mobile Phones (≤575px) ---------- */
+@media (max-width: 575px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .store-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  .cta input[type="email"] {
+    width: 100%;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .social-links a {
+    margin: 0 0.3rem;
+  }
+}
+
+/* ---------- Orientation-Specific (Landscape mode) ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-content {
+    top: 55%;
+    transform: translate(-50%, -55%);
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ---------- Accessibility & Scaling ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+  }
+
+  .site-header,
+  .site-footer {
+    background-color: #ffffff;
+  }
+
+  .btn-primary {
+    background-color: #d94b2b;
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background-color: #f2c744;
+    color: #000;
+  }
+}
